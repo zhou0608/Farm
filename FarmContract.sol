@@ -8,7 +8,7 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 contract Farm is VRFConsumerBaseV2Plus {
     AggregatorV3Interface internal dataFeed;
 
-    // Chainlink VRF配置123456123123123
+    // Chainlink VRF配置
     uint256 s_subscriptionId;
     address vrfCoordinator = 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B;
     bytes32 s_keyHash =
@@ -20,7 +20,7 @@ contract Farm is VRFConsumerBaseV2Plus {
     uint256 initial_price; // 初始种子价格         Initial seed price
     uint256 initial_price_time; // 更新种子的时间
 
-    // 田地信息22222
+    // 田地信息
     struct Plot {
         uint256 status; // 当前地的状态 0 表示空地 1 表示已种
         uint256 lastWatered; // 浇水时间
