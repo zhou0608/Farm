@@ -8,7 +8,7 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 contract Farm is VRFConsumerBaseV2Plus {
     AggregatorV3Interface internal dataFeed;
 
-    // Chainlink VRF配置1
+    // Chainlink VRF配置
     uint256 s_subscriptionId;
     address vrfCoordinator = 0x9DdfaCa8183c41ad55329BdeeD9F6A8d53168B1B;
     bytes32 s_keyHash =
